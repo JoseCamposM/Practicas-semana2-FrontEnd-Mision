@@ -1,0 +1,491 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px;
+    padding: 0;
+    margin: 0;
+    line-height:1.5;
+    background-color: white;
+}
+/*--------------------------
+navbar
+----------------------------*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+    padding: 0 5%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li > a{
+    display: block;
+    position: relative;
+    padding: 20px 15px 10px 15px;
+    text-decoration: none;
+    color: #79869c;
+}
+.link {
+    
+    position: relative;
+    left:200px;
+}
+nav ul li .link::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    background-color: black
+    
+}
+
+nav ul li .link:hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    background-color: black
+}
+#vaccination {
+    color : #2976d6;
+    font-size: 30px;
+
+}
+
+nav .more {
+    display: none;
+  }
+  
+nav .menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    margin-top: 48px;
+  
+    background-color: white;
+  }
+  
+nav .menu a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+nav .menu a:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+/*
+Header
+*/
+#enfermera {
+    background-size: cover;
+    background-position: center center;
+    height: 120vh;
+    width: 100vh;
+    position: absolute;
+    z-index: 100;
+    top: 120px;
+    right: 0px;
+   
+  }
+#prueba {
+    border: 1px solid #0000;
+}  
+
+
+.green-button {
+    position: absolute;
+    z-index: 500;
+    top: 15px;
+    right: -420px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 40px;
+    background-color: #306ed4;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+  }
+  .green-button:hover {
+    background-color: #183e7a;
+  }
+  
+  .green-link {
+    text-transform: uppercase;
+    border: 0;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #306ed4
+    font-weight: bolder;
+    text-decoration: none;
+    
+  }
+  
+  .green-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  
+    background-color: #306ed4;
+  }
+  
+  .green-link:hover::before {
+    transform: scaleX(0.8);
+  }
+
+
+#texto{
+    background-size: cover;
+    background-position: center center;
+    height: 120vh;
+    width: 100vh;
+    position: absolute;
+    z-index: 100;
+    top: 150px;
+    left: 100px;
+    
+  }
+#texto {
+    color: gray;
+}
+#texto h1 {
+    color : #1f3e72;
+    font-size: 70px;;
+}  
+
+.iconos ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.iconos ul li > a{
+    display: block;
+    position: relative;
+    padding: 20px 15px 10px 15px;
+    text-decoration: none;
+    color: #79869c;
+}
+.link {
+    
+    position: relative;
+    left:200px;
+}
+.iconos ul li .link::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    background-color: black
+    
+}
+
+.iconos ul li .link:hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    background-color: black
+}
+
+.iconos {
+  position: absolute;
+  z-index: 100;
+  top: 450px;
+  left: 20px;
+}
+.iconos li {
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+#reloj {
+  position: absolute;
+  z-index: 100;
+  top: 70px;
+  left: 20px;
+}
+
+#datos {
+  width: 1000px;
+  height: 100px;
+  position: absolute;
+  z-index: 100;
+  top: 750px;
+  left: 50px;
+  border: .5px solid gray;
+  background: white;
+}
+#datos li {
+  width: 700px; 
+}
+
+
+#submit{
+
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+  left: 10px;
+
+}
+
+.sub{
+  color: #1f3e72;
+  display: block;
+}
+.sup{
+  color: gray;
+  display: inline;
+}
+
+.vacunas{
+  position: absolute;
+  z-index: 100;
+  top: 950px;
+  left: 90px;
+
+}
+
+.vacunas img {
+  padding:50px;
+}
+
+.why{
+  position: absolute;
+  z-index: 100;
+  top: 1200px;
+  left: 90px;
+}
+.why h1{
+  color: #1f3e72;
+  display: block;
+}
+.why{
+  color:gray;
+}
+
+.razones{
+  position: absolute;
+  z-index: 100;
+  top: 1500px;
+  left: 100px;
+  color: gray;
+}
+
+.razones h2{
+color: #1f3e72;
+}
+#minimize{
+  position: absolute;
+  z-index: 100;
+  font-size: 20px;;
+  left: 90px;
+}
+#forming{
+  position: absolute;
+  z-index: 100;
+  font-size: 20px;;
+  left: 400px;
+}
+#protecting{
+  position: absolute;
+  z-index: 100;
+  font-size: 20px;;
+  left: 700px;
+}
+
+#creating{
+  position: absolute;
+  z-index: 100;
+  font-size: 20px;;
+  left: 1000px;
+}
+
+#preparations{
+  position: absolute;
+  z-index: 100;
+  font-size: 20px;;
+  left: 700px;
+  top: 2000px;
+  color:gray;
+}
+#preparations{
+  color: #1f3e72;
+}
+
+#woman{
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;;
+  top: 2200px;
+}
+
+#preparacion{
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;;
+  top: 2320px;
+  left: 680px;
+  padding: 50px;
+}
+
+
+#preparacion h5{
+  color: #1f3e72;
+  margin-top: 40px;
+}
+
+#male{
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;;
+  top: 3120px;
+  right: 0px;
+}
+
+
+#contact{
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;;
+  top: 3050px;
+  left: 90px;
+  color: gray;
+}
+
+#contact h1{
+  color: #1f3e72;
+}
+
+.mediodecontacto{
+  color: gray;
+  border: 1px solid #0000;
+  z-index: 0;
+  font-size:15px;
+  color: gray;  
+}
+
+.mediodecontacto h1{
+  color: #1f3e72;
+}
+
+#call{
+  position: absolute;
+  top: 3400px;
+  left: 90px;
+}
+#chat{
+position: absolute;
+top: 3400px;
+left:400px;
+}
+
+#videocall{
+  position: absolute;
+  top: 3700px;
+  left:90px;
+}
+
+#message{
+  position: absolute;
+  top: 3700px;
+  left:400px;
+  }
+
+  footer h1{
+    color: #1f3e72;
+  }
+footer{
+  position: absolute;
+  top: 4000px;
+
+  height: 400px;
+  width:100%;
+  font-size: 20px;
+  color:gray;
+  background-color:rgba(0,170,228, 0.1);
+}  
+
+#footVaccination{
+  position: absolute;
+  top:10px;
+  left:100px;
+}
+
+#copyright{
+  position: absolute;
+  top:400px;
+  left:100px;
+}
+
+#about{
+  position: absolute;
+  top:10px;
+  left:700px;
+}
+
+#company{
+  position: absolute;
+  top:10px;
+  left:900px;
+}
+
+#support{
+  position: absolute;
+  top:10px;
+  left:1150px;
+}
+
+#terms{
+  position: absolute;
+  top:400px;
+  left:1000px; 
+}
